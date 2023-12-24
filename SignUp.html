@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>SignUp</title>
+<style>
+.button {
+background-color:yellow;
+color: red;
+border: 3px  solid;
+          }
+input[type=text],input[type=number]
+{
+
+  border:5px solid #ccc;
+
+}
+</style>
+<script>
+function Registered() {
+               var retVal = confirm("Do You Want To Register ?");
+               if( retVal == true ) {
+                  document.write (" You Registered Successfully !!");
+                  return true;
+               } else {
+                  document.write (" You Are Not Registered !!");
+                  return false;
+               }
+            }
+</script>
+</head>
+<body background="	Cake.gif" >
+<form>
+<center>
+<br>
+<h1>  <font color=”blue” > SignUp Form</font></h1>
+<b> 
+<br>
+Name:<br>
+<input type="text" name="name"><br><br>
+Address:<br>
+<input type="text" name="address"><br><br>
+Pin Code:<br>
+<input type="text" name="pin code"><br><br>
+Mobile Number:<br>
+<input type="number" name="mobile no."><br><br>
+Sex:<br>
+<input type="radio" name="sex" value="male">Male <br>
+<input type="radio" name="sex" value="female">Female <br>
+<input type="radio" name="sex" value="other">Other <br><br>
+Email:<br>
+<input type="text" name="email"><br><br>
+<input type="submit" value="Submit" class="button" onclick=Registered()  >
+<input type="reset" value="Clear" class="button" >
+</center>
+</form>
+</html>

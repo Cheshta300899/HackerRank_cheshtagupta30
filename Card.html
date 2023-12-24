@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>Card</title>
+<style>
+.button {
+background-color:yellow;
+color: red;
+border: 3px  solid;
+          }
+input[type=text],input[type=number],input[type=month]
+{
+
+  border:5px solid #ccc;
+
+}
+
+</style>
+<script>
+function Transaction(form){
+if (form.Card.value=="Credit")
+{
+window.location = "Transaction-Credit Card.html";
+
+}
+else
+{
+window.location = "Transaction-Debit Card.html";
+
+}
+}
+
+</script>
+</head>
+<body bgcolor="cyan">
+<form>
+<center>
+<br>
+<h1><font color=”blue” >Card Transaction</font></h1>
+<b> 
+<br><br>
+<img src="Transaction.jpg" width = "200" height = "100"/>
+<br><br><br>
+Card:
+<input type= "text" name="Card" placeholder="Credit/Debit"><br><br><br>
+Card Number:<br>
+<input type="number" name="Card number"><br><br><br>
+Card Holder Name:<br>
+<input type="text" name="Card holder name"><br><br><br>
+Expiry:
+<input type="month" name="Expiry">
+CVV:
+<input type="text" name="Cvv"><br><br><br><br>
+<input type="button" value="Proceed" class="button" onclick=Transaction(form) >
+</center>
+</form>
+</html>

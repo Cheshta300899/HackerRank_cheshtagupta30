@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>Cake Order</title>
+<style>
+.button {
+background-color:yellow;
+color: red;
+border: 3px  solid;
+                }
+
+</style>
+<script>
+function Warn() {
+alert ("Price is 450 Per Kg !!");
+document.write("Price is 450 Per Kg !!");
+                         }
+function OrderConfirmation() {
+var retVal = confirm("Do You Want To Place Order ?");
+               if( retVal == true ) {
+                  document.write ("Your Order Successfully Received !!");
+window.location = "Order Confirmation Slip.html";
+ return true;
+
+               } 
+else {
+                  document.write ("User Does Not Want To Cancel Order !!");
+ window.location = "Order Cancellation Slip.html";
+  return false;
+               }
+            }
+</script>
+</head>
+<body background="Cake.gif" >
+<form>
+<center>
+<b>
+<h1>  <font color=”blue” >Order Form</font></h1>
+<br>
+Cake Flavour:<br>
+<input type="checkbox" name="Cake Flavour"
+value="Chocolate"> Chocolate <br>
+<input type="checkbox" name="Cake Flavour"
+value="Vanilla">Vanilla <br>
+<input type="checkbox" name="Cake Flavour"
+value="Strawberry"> Strawberry <br>
+<input type="checkbox" name="Cake Flavour"
+value="Black Forest"> Black Forest  <br>
+<input type="checkbox" name="Cake Flavour"
+value="Pineapple"> Pineapple<br>
+<p>Custom Cake</p>
+<font size="4">Requirements Description For Cake :<br>
+<textarea rows="10"  cols="30" name "requirements">
+</textarea><br><br>
+Type:<br>
+<input type="radio" name="Type" value="Egg">Egg<br>
+<input type="radio" name="Type" value="EggLess">EggLess<br><br>
+Cake Shape:<br>
+<input type="checkbox" name="Cake Shape" value="Sqaure">Square<br>
+<input type="checkbox" name="Cake Shape" value="Round">Round<br>
+<input type="checkbox" name="Cake Shape" value="Heart">Heart<br><br>
+Weight:<br>
+<input type="checkbox" name="Weight" value="One Kg">One Kg<br>
+<input type="checkbox" name="Weight" value="Two Kg">Two Kg<br>
+<input type="checkbox" name="Weight" value="Three Kg">Three Kg<br>
+<input type="checkbox" name="Weight" value="Five Kg">Five Kg<br><br>
+Occasion:<br>
+<select name="Occasion">
+  <option value="Anniversary">Anniversary</option>
+  <option value="Birthday">Birthday</option>
+  <option value="Party">Party</option>
+</select><br><br>
+<input type="button" value="Price Check" onclick=Warn() class="button">
+<input type="submit" value="Submit" class="button" onclick=OrderConfirmation()>
+</form>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<html>
+<head>
+<title> FeedBack Form  </title>
+<style>
+.button {
+background-color:yellow;
+color: red;
+border: 3px  solid;
+                }
+input[type=text],textarea
+{
+
+  border:5px solid #ccc;
+
+}
+
+</style>
+<script>
+function Warn() {
+alert ("ThankYou For Giving Feedback  !!");
+document.write("ThankYou For Giving Feedback !!");
+                         }
+</script>
+</head>
+<body background="Cake.gif" >
+<center>
+<br><br>
+<h1>  <font color=”blue” > FeedBack Form</font></h1> 
+<form>
+<br><br>
+<b>
+<font size="4">Name:<br>
+<input type="text" name="name"><br><br>
+<font size="4">State:<br>
+<input type="text" name="state"><br><br>
+<font size="4">Reviews And Comments :<br><br>
+<textarea rows="13"  cols="29" name "comments"  placeholder="Write Something...">
+</textarea>
+<br><br><br>
+<input type="button"  class="button" value="Submit" onclick=Warn()>
+</center>
+</form>
+</body>
+</html>
