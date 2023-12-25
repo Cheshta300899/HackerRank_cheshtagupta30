@@ -1,1 +1,2 @@
-Online Cake Ordering & Delivering Website Clone
+# Online-Cake-Ordering-and-Delivering-Website
+Technologies used:- HTML, CSS, JavaScript
