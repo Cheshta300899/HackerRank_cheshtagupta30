@@ -1,3 +1,2 @@
-# Online Cake Ordering and Delivering System                                                             
-# (Tasty Cakes)
+# Online Cake Ordering and Delivering System
 Technologies used:- HTML, CSS, JavaScript
